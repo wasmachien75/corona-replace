@@ -1,4 +1,24 @@
-import words from "./words"
+const words: string[] = [
+  "conundrum",
+  "concert",
+  "cacao",
+  "component",
+  "cadmium",
+  "catechesis",
+  "calcium",
+  "curatorium",
+  "circus",
+  "cirrhosis",
+  "competition",
+  "crêpe",
+  "coprophilia",
+  "cunnilingus",
+  "credence",
+  "corticoide",
+  "consensus",
+  "collage",
+  "colonoscopy",
+];
 
 function random(): string {
     let i = Math.floor(Math.random() * words.length)
