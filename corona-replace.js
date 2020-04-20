@@ -50,8 +50,9 @@ function replaceText(node, word) {
         return;
     if (node.nodeType === node.TEXT_NODE) {
         if (node.textContent !== null) {
+            var text = node.textContent;
             node.textContent = node.textContent
-                .replace(/corona|covid/i, function (val) {
+                .replace(/corona|covid/ig, function (val) {
                 if (val == val.toLowerCase()) {
                     return word;
                 }

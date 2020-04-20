@@ -115,3 +115,5 @@ dist
 .pnp.*
 
 web-ext-artifacts/
+
+src.zip

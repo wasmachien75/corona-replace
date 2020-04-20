@@ -50,8 +50,9 @@ function replaceText(node: Node, word: string) {
     if (["script", "head", "svg"].indexOf(node.nodeName) != -1) return;
     if (node.nodeType === node.TEXT_NODE) {
         if (node.textContent !== null) {
+            let text = node.textContent;
             node.textContent = node.textContent
-                .replace(/corona|covid/i, (val: string) => {
+                .replace(/corona|covid/ig, (val: string) => {
                     if (val == val.toLowerCase()) {
                         return word;
                     }

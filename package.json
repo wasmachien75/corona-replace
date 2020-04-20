@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && web-ext build --overwrite-dest "
+    "build": "tsc && web-ext build --overwrite-dest && zip -r src.zip src"
   },
   "author": "",
   "license": "ISC",
