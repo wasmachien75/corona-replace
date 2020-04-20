@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "CoronaReplace",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Replaces 'corona' and related terms with other c-words.",
 

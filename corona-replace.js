@@ -4,13 +4,33 @@ var words = [
     "concert",
     "cacao",
     "component",
+    "curling",
+    "cylinder",
+    "cyber",
+    "carbonara",
+    "calzone",
+    "cabriolet",
+    "calculus",
+    "calisthenics",
+    "callcenter",
+    "cardigan",
+    "carpaccio",
+    "chateaubriand",
+    "circuit",
+    "coffee",
+    "coke",
+    "coca-cola",
+    "collaborator",
+    "computer",
+    "cornucopia",
+    "cornetto",
+    "cinema",
     "cadmium",
     "catechesis",
     "calcium",
     "curatorium",
     "circus",
     "cirrhosis",
-    "competition",
     "crêpe",
     "coprophilia",
     "cunnilingus",
@@ -19,6 +39,7 @@ var words = [
     "consensus",
     "collage",
     "colonoscopy",
+    "chainsmoker"
 ];
 function random() {
     var i = Math.floor(Math.random() * words.length);
@@ -55,7 +76,7 @@ var observer = new MutationObserver(function (mutations, observer) {
     for (var _i = 0, mutations_1 = mutations; _i < mutations_1.length; _i++) {
         var m = mutations_1[_i];
         if (((_a = m.addedNodes) === null || _a === void 0 ? void 0 : _a.length) > 0) {
-            (_b = m.addedNodes) === null || _b === void 0 ? void 0 : _b.forEach(function (n) { return replacementWord; });
+            (_b = m.addedNodes) === null || _b === void 0 ? void 0 : _b.forEach(function (n) { return replaceText(n, replacementWord); });
         }
     }
 });

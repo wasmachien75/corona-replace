@@ -3,13 +3,33 @@ const words: string[] = [
   "concert",
   "cacao",
   "component",
+  "curling",
+  "cylinder",
+  "cyber",
+  "carbonara",
+  "calzone",
+  "cabriolet",
+  "calculus",
+  "calisthenics",
+  "callcenter",
+  "cardigan",
+  "carpaccio",
+  "chateaubriand",
+  "circuit",
+  "coffee",
+  "coke",
+  "coca-cola",
+  "collaborator",
+  "computer",
+  "cornucopia",
+  "cornetto",
+  "cinema",
   "cadmium",
   "catechesis",
   "calcium",
   "curatorium",
   "circus",
   "cirrhosis",
-  "competition",
   "crêpe",
   "coprophilia",
   "cunnilingus",
@@ -18,6 +38,7 @@ const words: string[] = [
   "consensus",
   "collage",
   "colonoscopy",
+  "chainsmoker"
 ];
 
 function random(): string {
@@ -56,7 +77,7 @@ const replacementWord = random();
 const observer = new MutationObserver(function (mutations, observer) {
     for (let m of mutations) {
         if (m.addedNodes?.length > 0) {
-            m.addedNodes?.forEach((n) => replacementWord);
+            m.addedNodes?.forEach((n) => replaceText(n, replacementWord));
         }
     }
 });
